@@ -10,12 +10,14 @@ git log --oneline shows the log of the git in one line
 git --no-pager log -n 10 --oneline --parents --graph shows everything very nicely
 git --unset <key> unsets the key
 
-git branch -m oldbranchname newbranchname changes the branch name
-git merge branchname merges the branch to main branch
-git branch branchname switches to that branch
-git switch -c branchname also does the same
-git branch -d branchname deletes the branch
-git rebase branchname rebase the commit
+git branch -m <oldbranchname> <newbranchname> changes the branch name
+git merge <branchname> merges the branch to main branch
+git merge --abort aborts the merge
+git branch <branchname> switches to that branch
+git switch -c <branchname> also does the same
+git checkout <branchname> also does the same work
+git branch -d <branchname> deletes the branch
+git rebase <branchname> rebase the commit
 git reset commithash used to undo the changes
         --soft undoes the changes but keeps the changes
         --hard undoes the changes by deleting the changes permanently
@@ -26,3 +28,5 @@ git fetch brings in all the changes of the repo
 git merge <reponame>/<branchname> this how you merge the commit if you have two or more remote repo together
 curl -sS https://webi.sh/gh | sh for accessing github through terminal
 
+.gitignore allows to ignore stuffs
+git reflog also shows log with the HEAD@n and the commit sha
