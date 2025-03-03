@@ -5,6 +5,8 @@ git config --global init.defaultBranch main
 
 git status shows the status of the directory
 git add . adds all the latest changes to the git
+git push -u origin main pushes the repo
+                        --force forcefully
 git commit -m helps to commit a message
 git log --oneline shows the log of the git in one line
 git --no-pager log -n 10 --oneline --parents --graph shows everything very nicely
